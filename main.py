@@ -209,7 +209,7 @@ def init():
                 if attack_type_readable == '':
                     attack_type_readable = "[Undetected]"
 
-                print(f"{FORMAT_OUTPUT}{color.FAIL}{"Detected Method:":>{23}}" \
+                print(f"{FORMAT_OUTPUT}{color.FAIL}{'Detected Method:':>{23}}" \
                       +f"{color.OK_BLUE} {attack_type}")
 
                 try:
@@ -234,8 +234,8 @@ def init():
                 }
                 discord_notifier.send_notification(attack_data, export_json)
 
-                print(f"{FORMAT_OUTPUT}{color.FAIL}{"Pausing BEACON For:":>23} {color.OK_BLUE}" \
-                    +f"[{color.FAIL}{str(configure["triggers"]["PAUSE"])+" seconds":^{15}}" \
+                print(f"{FORMAT_OUTPUT}{color.FAIL}{'Pausing BEACON For:':>23} {color.OK_BLUE}" \
+                    +f"[{color.FAIL}{str(configure['triggers']['PAUSE'])+' seconds':^{15}}" \
                     +f"{color.OK_BLUE}]{color.RESET}")
 
                 time.sleep(int(configure["triggers"]["PAUSE"]))
@@ -245,7 +245,7 @@ def init():
                 sys.stdout.write('\x1b[1A')
                 sys.stdout.write('\x1b[2K')
         except Exception as error:
-            print(f"{FORMAT_OUTPUT}{"Error:":>23} [{error}]")
+            print(f"{FORMAT_OUTPUT}{'Error:':>23} [{error}]")
             sys.exit()
 
 def display_export_data(export_json):
