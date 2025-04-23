@@ -17,17 +17,23 @@ BEACON is a Python3 layer-4 (D)DoS network monitor script with automatic attack 
 
 ## 🚀 Quick Start
 
-1. **Install Dependencies**
+1. **Clone repository**
+   ```bash
+   git clone https://github.com/AnabolicsAnonymous/BEACON
+   cd BEACON
+   ```
+
+2. **Install Dependencies**
    ```bash
    pip install -r requirements.txt
    ```
 
-2. **Configure**
+3. **Configure**
    - Copy `config.py.example` to `config.py`
    - Update your Discord webhook URL
    - Customize detection thresholds
 
-3. **Run**
+4. **Run**
    ```bash
    python main.py
    ```
