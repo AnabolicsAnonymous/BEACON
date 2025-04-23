@@ -29,7 +29,7 @@ BEACON is a Python3 layer-4 (D)DoS network monitor script with automatic attack 
    ```
 
 3. **Configure**
-   - Copy `config.py.example` to `config.py`
+   - Copy `core/config.py.example` to `core/config.py`
    - Update your Discord webhook URL
    - Customize detection thresholds
 
