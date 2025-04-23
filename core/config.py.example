@@ -1,0 +1,49 @@
+"""
+NOTICE OF LICENSE.
+
+Copyright 2025 @AnabolicsAnonymous
+
+Licensed under the Affero General Public License v3.0 (AGPL-3.0)
+
+This program is free software: you can redistribute it and/or modify
+it under the terms of the Affero General Public License as published by
+the Free Software Foundation, either version 3 of the License, or
+(at your option) any later version.
+"""
+
+CONFIG = {
+    "user": {
+        "BEACON_tag": "BEACON-v1.0.0", # BEACON version to display
+        "IP": "Automatic", # IP address to display
+    },
+
+    "capture": {
+        # TODO: Auto detect interface
+        # TODO: Make protocol filter function
+        "interface": "eth0", # eth0, wlan0, etc.. eth0 may not be your default interface
+        "Protocol_Filter": "TCP", # TCP, UDP, ICMP, etc.
+    },
+
+    "notification": {
+        "Embed_Webhook_URL": "https://discord.com/api/webhooks", # Channel > Integrations > Webhooks
+    },
+
+    "triggers": {
+        "Trigger": "P", # P = Packets/sec, M = mb/sec, MP = Packets/sec and mb/sec must exceed
+        "PPS_THRESH": 1000, # 1000 PP/sec
+        "MBPS_THRESH": 20, # 20 mb/sec
+        "PAUSE": 60, # 60 seconds
+        "ConCount": 2000, # 2000 total packets
+        "Attack_occurrences": 500, # Attack Vector Sensitivity, lower = more sensitive
+    },
+
+    "colors": {
+        # Colors for the output
+        # TODO: Make easily customizable themes
+        "OK_BLUE": 34,
+        "OK_GREEN": 92,
+        "FAIL": 91,
+        "PINK": 35,
+        "RESET": 0,
+    },
+}

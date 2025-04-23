@@ -1,0 +1,65 @@
+{
+    "content": null,
+    "embeds": [
+        {
+            "title": "🚨 Attack Detected #{{attack_id}}",
+            "description": "BEACON has detected and analyzed a potential DDoS attack",
+            "color": 26367,
+            "fields": [
+                {
+                    "name": "📊 Network Analysis",
+                    "value": "```\nDetailed traffic analysis results\n```",
+                    "inline": false
+                },
+                {
+                    "name": "📦 Packets/sec",
+                    "value": "```\n{{pps}}\n```",
+                    "inline": true
+                },
+                {
+                    "name": "💾 Megabits/sec",
+                    "value": "```\n{{mbps}}\n```",
+                    "inline": true
+                },
+                {
+                    "name": "⚡ CPU Usage",
+                    "value": "```\n{{cpu}}\n```",
+                    "inline": true
+                },
+                {
+                    "name": "🎯 Attack Vector",
+                    "value": "```\n{{attack_vector}}\n```",
+                    "inline": false
+                },
+                {
+                    "name": "🌐 Unique Source IPs",
+                    "value": "```\n{{total_ips}} Total IPs\n{{ipv4_count}} IPv4\n{{ipv6_count}} IPv6\n```",
+                    "inline": true
+                },
+                {
+                    "name": "📡 Most Active Source",
+                    "value": "```\n{{most_common_source_ip}}\n```",
+                    "inline": true
+                },
+                {
+                    "name": "🎯 Most Active Destination",
+                    "value": "```\n{{most_common_dest_ip}}\n```",
+                    "inline": true
+                },
+                {   
+                    "name": "📊 Packet Statistics",
+                    "value": "```\n{{packets}} packets captured\n{{avg_pps}} average PPS/IP\n```",
+                    "inline": true
+                }
+            ],
+            "author": {
+                "name": "BEACON v1.0.0 | Network Security Monitor"
+            },
+            "footer": {
+                "text": "PCAP: {{pcap}}"
+            },
+            "timestamp": "{{timestamp}}"
+        }
+    ],
+    "attachments": []
+} 
