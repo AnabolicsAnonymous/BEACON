@@ -16,7 +16,7 @@ import os
 from datetime import datetime
 import re
 try:
-    from core.configuration.config import CONFIG
+    from core.config import CONFIG
 except ImportError:
     CONFIG = {}
 
